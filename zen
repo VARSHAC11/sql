@@ -1,20 +1,20 @@
 > use Zen
 switched to db Zen
 > db.attendance.insertMany([{
-...
-...         "id" : 1,
-...         "attendance" : "absent"
-... },
-... {
-...
-...         "id" : 2,
-...         "attendance" : "present"
-... },
-... {
-...
-...         "id" : 3,
-...         "attendance" : "absent"
-... }])
+
+         "id" : 1,
+        "attendance" : "absent"
+ },
+ {
+
+       "id" : 2,
+        "attendance" : "present"
+ },
+ {
+
+        "id" : 3,
+         "attendance" : "absent"
+ }])
 {
         "acknowledged" : true,
         "insertedIds" : [
@@ -24,35 +24,34 @@ switched to db Zen
         ]
 }
 > db.codekata.insertMany([{
-...
-...         "id" : 1,
-...         "number_of_problems_solved" : 34,
-...         "completed_topics" : [
-...                 "zen",
-...                 "company",
-...                 "microsoft"
-...         ]
-... },
-... {
-...         "id" : 2,
-...         "number_of_problems_solved" : 100,
-...         "completed_topics" : [
-...                 "zen",
-...                 "company",
-...                 "zoho"
-...         ]
-... },
-... {
-...
-...         "id" : 3,
-...         "number_of_problems_solved" : 50,
-...         "completed_topics" : [
-...                 "zen",
-...                 "company",
-...                 "zoho",
-...                 "absolute beginner"
-...         ]
-... }])
+       "id" : 1,
+        "number_of_problems_solved" : 34,
+      "completed_topics" : [
+                "zen",
+              "company",
+                 "microsoft"
+        ]
+},
+{
+         "id" : 2,
+         "number_of_problems_solved" : 100,
+         "completed_topics" : [
+                 "zen",
+                 "company",
+                 "zoho"
+         ]
+ },
+ {
+
+         "id" : 3,
+         "number_of_problems_solved" : 50,
+         "completed_topics" : [
+                 "zen",
+                 "company",
+                "zoho",
+                "absolute beginner"
+         ]
+ }])
 {
         "acknowledged" : true,
         "insertedIds" : [
@@ -88,29 +87,29 @@ date:new Date("2020-09-01")}
         ]
 }
 > db.mentors.insertMany([{
-...
-...         "id" : 10,
-...         "Firstname" : "Martin",
-...         "Lastname" : "Yoshimi",
-...         "email" : "mgerard@classicmodelcars.com",
-...         "mentee" : 4.5
-... },
-... {
-...
-...         "id" : 209,
-...         "Firstname" : "Peter",
-...         "Lastname" : "Fixter",
-...         "email" : "bjones@classicmodelcars.com",
-...         "mentee" : 4.8
-... },
-... {
-...
-...         "id" : 389,
-...         "Firstname" : "Bondur",
-...         "Lastname" : "Andy",
-...         "email" : "lbondur@classicmodelcars.com",
-...         "mentee" : 3.1
-... }])
+
+         "id" : 10,
+        "Firstname" : "Martin",
+        "Lastname" : "Yoshimi",
+        "email" : "mgerard@classicmodelcars.com",
+        "mentee" : 4.5
+ },
+ {
+
+         "id" : 209,
+         "Firstname" : "Peter",
+         "Lastname" : "Fixter",
+         "email" : "bjones@classicmodelcars.com",
+         "mentee" : 4.8
+},
+ {
+
+         "id" : 389,
+         "Firstname" : "Bondur",
+         "Lastname" : "Andy",
+        "email" : "lbondur@classicmodelcars.com",
+         "mentee" : 3.1
+ }])
 {
         "acknowledged" : true,
         "insertedIds" : [
@@ -120,23 +119,22 @@ date:new Date("2020-09-01")}
         ]
 }
 > db.tasks.insertMany([{
-...
-...         "id" : 1,
-...         "status" : "completed",
-...         "date_of_completion" : "28-08-2020"
-... },
-... {
-...
-...         "id" : 2,
-...         "status" : "not completed",
-...         "date_of_completion" : "to be updated"
-... },
-... {
-...
-...         "id" : 3,
-...         "status" : "not completed",
-...         "date_of_completion" : "to be updated"
-... }])
+
+         "id" : 1,
+        "status" : "completed",
+         "date_of_completion" : "28-08-2020"
+ },
+ {
+         "id" : 2,
+     "status" : "not completed",
+         "date_of_completion" : "to be updated"
+ },
+ {
+
+         "id" : 3,
+         "status" : "not completed",
+         "date_of_completion" : "to be updated"
+ }])
 {
         "acknowledged" : true,
         "insertedIds" : [
@@ -147,16 +145,16 @@ date:new Date("2020-09-01")}
 }
 
 db.topics.insertOne({
-...
-...         "id" : 1,
-...         "topics" : [
-...                 "html",
-...                 "css",
-...                 "bootstrap"
-...         ],
-...         "month" : "Oct",
-... tasks:["pan-card","laud-page","Registration form"]
-... })
+
+         "id" : 1,
+         "topics" : [
+                 "html",
+                 "css",
+                 "bootstrap"
+        ],
+         "month" : "Oct",
+ tasks:["pan-card","laud-page","Registration form"]
+ })
 {
         "acknowledged" : true,
         "insertedId" : ObjectId("6132325e9d6e159b202dc3b1")
@@ -164,29 +162,29 @@ db.topics.insertOne({
 
 
 > db.users.insertMany([{
-...
-...         "id" : 1,
-...         "Firstname" : "Jonas",
-...         "Lastname" : "Susan",
-...         "email" : "ghernande@classicmodelcars.com",
-...         "phone" : 2345678645
-... },
-... {
-...
-...         "id" : 2,
-...         "Firstname" : "Larry",
-...         "Lastname" : "Bott",
-...         "email" : "bjones@classicmodelcars.com",
-...         "phone" : 4563234566
-... },
-... {
-...
-...         "id" : 3,
-...         "Firstname" : "Barry",
-...         "Lastname" : "Andy",
-...         "email" : "lbott@classicmodelcars.com",
-...         "phone" : 2323234566
-... }])
+
+         "id" : 1,
+       "Firstname" : "Jonas",
+         "Lastname" : "Susan",
+         "email" : "ghernande@classicmodelcars.com",
+         "phone" : 2345678645
+},
+ {
+
+         "id" : 2,
+         "Firstname" : "Larry",
+       "Lastname" : "Bott",
+         "email" : "bjones@classicmodelcars.com",
+         "phone" : 4563234566
+ },
+ {
+
+         "id" : 3,
+         "Firstname" : "Barry",
+         "Lastname" : "Andy",
+         "email" : "lbott@classicmodelcars.com",
+         "phone" : 2323234566
+ }])
 {
         "acknowledged" : true,
         "insertedIds" : [
